@@ -1,0 +1,23 @@
+<header>
+
+  <!-- Je vais utiliser une classe content car je veux centrer le contenu mais je souhaite que le background du header et du footer déborde-->
+  <div class="content">
+    <!-- Les balises <h> permettent de créer des titres. J'utilise un span pour juste modifier le JF de mon H1 -->
+    <h1><a [routerLink]="''" href="index.html"><span>JF</span> Webdevelopper</a> </h1>
+    <h2>Julie Fouss</h2>
+    <!-- j'ouvre une navigation pour permettre aux utilisateurs de pouvoir passer d'une page à l'autre-->
+    <nav>
+      <!-- les balises ul et li permettent de créer une liste avec plusieurs items et dans ce cas plusieurs liens -->
+      <ul>
+        <!-- la classe current permet de montrer la page que l'utilisateur choisit et parcourt , il est donc à placer sur le lien actif-->
+        <li> <a [routerLink]="''" routerLinkActive="current" [routerLinkActiveOptions]="{'exact': true}"href="index-julie-fouss.html">Accueil</a></li>
+        <li><a  [routerLink]="'Parcours'"routerLinkActive="current" href="parcours-julie-fouss.html">Parcours</a></li>
+        <li><a [routerLink]="'Portfolio'" routerLinkActive="current" href="portfolio-julie-fouss.html">Portfolio</a></li>
+        <li><a [routerLink]="'Compétence'" routerLinkActive="current" href="competence-julie-fouss.html">Compétences</a></li>
+        <li><a [routerLink]="'Contact'" routerLinkActive="current" href="contact-julie-fouss.html">Contact</a></li>
+
+      </ul>
+    </nav>
+  </div>
+</header>
+

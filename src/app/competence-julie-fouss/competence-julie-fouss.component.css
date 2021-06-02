@@ -1,0 +1,38 @@
+
+
+/*GRID*/
+
+.grid {
+  display: grid;
+  grid-auto-columns: 1fr 1fr 1fr 1fr 1fr; /* Il y a 5 fractions, 5 colonnes dans le grid. Toutes de la même taille*/
+  grid-auto-rows: 1fr; /* une seule ligne dans mon grid*/
+  width: 200px;
+  height: 22px;
+  border: 3px solid;
+  border-radius: 4px;
+  border-color: #ffff;
+  grid-column-gap: 0px;/* pas d'espace entre les différentes fractions, colonnes*/
+  grid-auto-flow: column;
+  margin-left: 170px;
+  margin-top: -44px;
+  margin-bottom: 40px;
+
+
+}
+
+
+.progress20 {
+  background: #679181;
+  color: #ffff;
+  text-align: center;
+  font-family: 'Gotu', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffff;
+  font-style: italic;
+
+}
+
+p{
+  font-size: 20px;
+}

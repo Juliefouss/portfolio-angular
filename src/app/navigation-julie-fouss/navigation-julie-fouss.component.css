@@ -1,0 +1,22 @@
+a {
+  text-decoration: none;/*permet d'enlever la couleur bleu et la ligne sur le lien*/
+  color: #679181;/*color donne la couleur */
+
+}
+
+.current {
+  background: #679181;
+  padding: 10px;
+  color: #ffffff;
+
+}
+
+/* Permet de choisir la couleur du a au survol*/
+.current a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+h1 a{
+  color: #ffffff;
+}
