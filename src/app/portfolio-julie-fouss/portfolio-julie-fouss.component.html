@@ -9,7 +9,7 @@
 <!-- le ng for va servir à pourvoir afficher correctement les publications et dire que la 4 eme realisations prend  le last-->
       <div class="content">
         <ng-container *ngFor= "let rea of realisation ; let i=index">
-     <div [ngClass]="{'col col-3-12':true , 'float':true, 'last': (i+3)%3 == 0}">
+     <div [ngClass]="{'col col-3-12':true , 'float':true, 'last': (i+4)%4 == 0}">
         <div class="beautiful">
 <!-- les valeurs entre {{}} sont les valeurs que l api va donner -->
          <img src="{{server}}{{rea.image}}" alt={{rea.nomImage}}>
@@ -21,7 +21,7 @@
 
       </div>
 <!-- Pour mettre un clear après 4 réalisations -->
-        <div [ngClass]="{'clear':(i+1)%3 == 0}" ></div>
+        <div [ngClass]="{'clear':(i+4)%4 == 0}" ></div>
         </ng-container>
     </div>
 
